@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+    <style type="text/css">
+        .con{
+            width: 200px;
+
+            margin: 20px auto;
+            border: 1px solid #000000;
+            font-size: 0px;
+            text-align: center;
+
+        }
+        .con2{
+            width: 200px;
+
+            margin: 20px auto;
+            border: 1px solid #000000;
+            font-size: 0px;
+            text-align: center;
+
+        }
+        .con a{
+            height: 40px;
+            width: 40px;
+            background-color: gold;
+            display: inline-block;
+            font:  20px/40px '隶书';
+            margin: 20px;
+            text-decoration: none;
+        }
+        .con2 a{
+            height: 40px;
+            width: 40px;
+            background-color: gold;
+            margin: 20px;
+            font:  20px/40px '隶书';
+            float: left;
+        }
+        .clearfix:after,.clearfix:before{ content: "";display: table;}
+        .clearfix:after{ clear:both;}
+        .clearfix{zoom:1;}
+        .con3{
+            width: 300px;
+            margin: 20px auto;
+            border: 1px solid #000000;
+        }
+        .con3 span{
+
+            /*换行不会产生间隙*/
+            background-color: gold;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <a href="">1</a>
+        <a href="">1</a>
+        <a href="">1</a>
+        <a href="">1</a>
+        <a href="">1</a>
+        <a href="">1</a>
+        <a href="">1</a>
+        <a href="">1</a>
+        <a href="">1</a>
+
+    </div>
+
+    <div class="con2 clearfix">
+        <a href="">1</a>
+        <a href="">1</a>
+        <a href="">1</a>
+        <a href="">1</a>
+        <a href="">1</a>
+        <a href="">1</a>
+        <a href="">1</a>
+        <a href="">1</a>
+        <a href="">1</a>
+
+    </div>
+
+    <div class="con3 clearfix">
+        <span>spanyuansu</span>
+        <span>11111</span>
+        <span>222222222</span>
+        <span>234</span>
+        <span>5666</span>
+    </div>
+</body>
+</html>

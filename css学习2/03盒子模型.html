@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style type="text/css">
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+
+
+            border-top-width: 10px;
+            border-top-color: #0002ff;
+            /*实线：solid   虚线：dashed    点线：dotted*/
+            border-top-style: solid;
+                /*与上面效果一致*/
+            border-top: 10px solid #000;
+            border-left: 10px dashed #000;
+            border-right: 10px dotted #000;
+            border-bottom:10px dashed #000 ;
+            border: 10px solid #0002ff;
+
+            /*盒子会变大*/
+            /*上 右 下 左*/
+            padding: 10px 20px 30px 40px;
+            /*上 左右 下*/
+            padding: 10px 20px 30px ;
+            /*上下 左右*/
+            padding: 10px 20px  ;
+
+            /*与padding一致*/
+            margin: 100px;
+
+            /*盒子水平居中*/
+            margin: 100px auto;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">元素在页面中显示成一个方块，类似一个盒子，CSS盒子模型就是使用现实中盒子来做比喻，帮助我们设置元素对应的样式。盒子模型示意图如下：</div>
+    <div class="box">元素在页面中显示成一个方块，类似一个盒子，CSS盒子模型就是使用现实中盒子来做比喻，帮助我们设置元素对应的样式。盒子模型示意图如下：</div>
+</body>
+</html>

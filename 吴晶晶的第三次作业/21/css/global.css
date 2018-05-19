@@ -1,0 +1,91 @@
+@charset "gb2312";
+/* CSS Document */
+
+body{
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+	line-height:20px;
+	color:#333;
+   }
+ul,li,ol,h1,dl,dd{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	}
+a{
+	color:#333333;
+    text-decoration: none;
+	}    
+a:hover{
+	color:#333333;
+	text-decoration:underline;
+	}
+img{
+	border:0px;
+	}
+.blue{
+	color:#1965b3;
+	text-decoration:none;
+	}
+.blue:hover{
+	color:#1965b3;
+	text-decoration:underline;
+	}
+#header,#main,#footer{
+	width:960px;
+	margin:0px auto; 
+}
+.box1{
+	border: 1px solid black;
+	position: relative;
+	left:-2px;
+	top: 38px;
+
+}
+.box1 span{
+	float: left;
+	margin: 0 5px;
+	background-color: rgb(240,240,240);
+
+}
+.clearfix:after,.clearfix:before{ content: "";display: table;}
+.clearfix:after{ clear:both;}
+.clearfix{zoom:1;}
+.box2{
+	width: 950px;;
+	margin: 0px auto;
+	border: 1px solid black;
+	background-color: rgb(240,240,240);
+	position: absolute;
+	top: 117px;
+	left: 290px;
+	height: 30px;
+
+}
+   .img1{
+	float: left;
+	position: relative;
+	left: 200px;
+	margin-top: 5px;
+}
+.box2 input{
+	position: absolute;
+	left: 25px;
+	top:5px;
+}
+.img2{
+	margin-top: 12px;
+	float: left;
+	position: relative;
+	left: 210px;
+
+}
+.box2 ul{
+	margin-left: 350px;
+}
+.box2 ul li{
+	float: left;
+	margin: 5px 10px 10px 0px;
+	font-size: 13px;
+}

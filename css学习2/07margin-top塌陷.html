@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>塌陷</title>
+
+    <!--在两个盒子嵌套时候，内部的盒子设置的margin-top会加到外边的盒子上，导致内部的盒子margin-top设置失败，解决方法如下：-->
+
+    <!--1、外部盒子设置一个边框-->
+    <!--2、外部盒子设置 overflow:hidden-->
+    <!--3、使用伪元素类：-->
+    <style type="text/css">
+        .con{
+            width: 300px;
+            height: 200px;
+            background-color: gold;
+            /*只针对文本*/
+            text-align: center;
+        /*<!--1、外部盒子设置一个边框-->*/
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin-top: 50px;
+        }
+        .clearfix:before{
+            content: "";
+            display: table;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="con clearfix">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style type="text/css">
+        .con{
+            width: 400px;
+            height: 400px;
+            border: 1px solid #000000;
+            margin: 300px auto 0;
+
+            /*如果不设计属性就会以body来定位*/
+            position: relative;
+
+        }
+        .con div{
+
+            /*div是块元素 不设定宽度的化就是父元素的宽度*/
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            background-color: gold;
+            line-height: 100px;
+            text-align: center;
+            font-size: 40px;
+
+        }
+        body .box01{
+            /*相对原来的位置偏移，实际还是原来的位置*/
+            position: relative;
+            left: 50px;
+            top:50px;
+            background-color: green;
+        }
+        body .box02{
+            /*absolute 生成绝对定位元素，元素脱离文档流，不占据文档流的位置，*/
+            /*可以理解为漂浮在文档流的上方，相对于上一个设置了相对或者绝对或*/
+            /*者固定定位的父级元素来进行定位，如果找不到，则相对于body元素进行定位。*/
+            position: absolute;
+            left: -20px;
+            top:-20px;
+            background-color: #2a3580;
+        }
+        body .box03{
+            /*fixed 生成固定定位元素，元素脱离文档流，*/
+            /*不占据文档流的位置，可以理解为漂浮在文档*/
+            /*流的上方，相对于浏览器窗口进行定位。*/
+            position: fixed;
+            left: 0px;
+            top:0px;
+            background-color: #ff00d8;
+        }
+        .box4{
+            /*使用定位块元素和行内元素自动转化为行内块元素*/
+            position: absolute;
+            background-color: pink;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box01">1</div>
+        <div class="box02">2</div>
+        <div class="box03">3</div>
+
+
+    </div>
+    <div class="box4">这是第四个盒子</div>
+</body>
+</html>
